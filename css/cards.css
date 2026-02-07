@@ -1,0 +1,39 @@
+
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:40px;
+}
+
+
+.card-inner{
+background:#0c1b33;
+padding:20px;
+border-radius:18px;
+transition:.3s;
+}
+
+
+.card-inner:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,229,255,.2);
+}
+
+
+.card-inner img{
+width:100%;
+border-radius:12px;
+margin:10px 0;
+}
+
+
+.discord-btn{
+display:inline-block;
+padding:16px 30px;
+background:#5865F2;
+border-radius:12px;
+color:white;
+text-decoration:none;
+}
+
