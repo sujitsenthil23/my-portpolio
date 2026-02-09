@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Sujit Kumar | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-ring"></div>
+    <span>Loading portfolio</span>
+  </div>
+
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <header class="navbar">
+    <div class="logo">Sujit<span>Dev</span></div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle">Menu</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <canvas id="bg-canvas"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>S. Sujit Kumar</h1>
+        <h2><span id="typing"></span></h2>
+        <p class="hero-intro">
+          I build performant, game-inspired digital experiences across Minecraft, Discord bots, and modern web apps.
+          Focused on clean code, smart automation, and smooth user journeys.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="https://discord.com/users/980838325885747211" class="btn ghost" target="_blank" rel="noreferrer">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="about" class="section about reveal">
+      <div class="section-header">
+        <h3>About Me</h3>
+        <p>Experience across Minecraft servers, Discord automation, and web apps.</p>
+      </div>
+      <div class="about-grid">
+        <div class="profile-card">
+          <img src="assets/profile-placeholder.svg" alt="Profile placeholder" />
+          <div class="profile-badge">Open for collaborations</div>
+        </div>
+        <div class="about-text">
+          <p>
+            I am S. Sujit Kumar, a developer who genuinely enjoys building and optimizing digital experiences.
+            For the last eight years, I have created Minecraft SMP systems and custom scripting plugins for creators
+            and communities, including collaborations with GamerOnTop (270K+ subscribers).
+          </p>
+          <p>
+            I specialize in Minecraft scripting, server automation, and Discord bot development. Over the past two years,
+            I have built Python-powered Discord bots for moderation, staff workflows, and custom game logic. I currently
+            support the GamerOnTop Discord server with a management bot and am building a new Discord game called
+            RotCatcher that will launch soon.
+          </p>
+          <p>
+            This year I expanded into web development and delivered a billing web app with a clean UI and practical
+            automation features. I combine a creator-first mindset with production-ready code to deliver reliable systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="projects" class="section projects reveal">
+      <div class="section-header">
+        <h3>Projects</h3>
+        <p>Explore work across Discord, Minecraft, and the web.</p>
+      </div>
+      <div class="category-tabs">
+        <button class="tab active" data-category="discord">Discord Bot Development</button>
+        <button class="tab" data-category="minecraft">Minecraft Server Development</button>
+        <button class="tab" data-category="web">Web Development</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="discord">
+          <div class="card-header">
+            <h4>Server Management Bot</h4>
+            <span class="badge live">Live</span>
+          </div>
+          <p>Automates staff tasks, moderation alerts, and structured target tracking.</p>
+          <div class="tag-group">
+            <span>Python</span><span>Discord.py</span><span>Automation</span>
+          </div>
+        </article>
+        <article class="project-card" data-category="discord">
+          <div class="card-header">
+            <h4>RotCatcher (Game Bot)</h4>
+            <span class="badge dev">In Development</span>
+          </div>
+          <p>Interactive Discord mini-game with ranking, economy, and real-time events.</p>
+          <div class="tag-group">
+            <span>Python</span><span>Game Logic</span><span>APIs</span>
+          </div>
+        </article>
+        <article class="project-card" data-category="minecraft">
+          <div class="card-header">
+            <h4>SMP Automation Suite</h4>
+            <span class="badge live">Live</span>
+          </div>
+          <p>Custom scripts for gameplay events, rewards, and server economy balancing.</p>
+          <div class="tag-group">
+            <span>Skript</span><span>Spigot</span><span>Economy</span>
+          </div>
+        </article>
+        <article class="project-card" data-category="minecraft">
+          <div class="card-header">
+            <h4>Creator Event Pipeline</h4>
+            <span class="badge private">Private</span>
+          </div>
+          <p>Live event system with scoreboard syncing, quests, and staff utilities.</p>
+          <div class="tag-group">
+            <span>Paper</span><span>Plugins</span><span>Webhooks</span>
+          </div>
+        </article>
+        <article class="project-card" data-category="web">
+          <div class="card-header">
+            <h4>Billing Web App</h4>
+            <span class="badge live">Live</span>
+          </div>
+          <p>Responsive billing portal with automated invoices and admin workflows.</p>
+          <div class="tag-group">
+            <span>HTML</span><span>CSS</span><span>Node.js</span>
+          </div>
+        </article>
+        <article class="project-card" data-category="web">
+          <div class="card-header">
+            <h4>Portfolio Experience</h4>
+            <span class="badge dev">In Development</span>
+          </div>
+          <p>Experimental canvas animations with smooth scroll transitions.</p>
+          <div class="tag-group">
+            <span>Canvas</span><span>JavaScript</span><span>UI</span>
+          </div>
+        </article>
+      </div>
+      <div class="project-showcase" data-category="discord">
+        <div class="showcase-header">
+          <h4>Discord Bot Showcase</h4>
+          <p>Live embeds and automation workflows from recent builds.</p>
+        </div>
+        <div class="showcase-grid">
+          <figure class="showcase-card">
+            <img src="assets/discord/vouch-system.png" alt="Vouch system embed" />
+            <figcaption>Vouch system with ratings and trust details.</figcaption>
+          </figure>
+          <figure class="showcase-card">
+            <img src="assets/discord/welcome-system.png" alt="Welcome system embed" />
+            <figcaption>Welcome automation with role and channel guidance.</figcaption>
+          </figure>
+          <figure class="showcase-card">
+            <img src="assets/discord/middleman-trade.png" alt="Middleman trade system embed" />
+            <figcaption>Middleman trade request workflow with claim status.</figcaption>
+          </figure>
+          <figure class="showcase-card">
+            <img src="assets/discord/auto-ip.png" alt="Auto IP response embed" />
+            <figcaption>Auto IP system responds instantly to `!ip` requests.</figcaption>
+          </figure>
+          <figure class="showcase-card">
+            <img src="assets/discord/staff-log.png" alt="Staff log moderation embed" />
+            <figcaption>Staff log system for warnings, timeouts, kicks, and bans.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="reviews" class="section reviews reveal">
+      <div class="section-header">
+        <h3>Reviews</h3>
+        <p>What clients say about the work and communication.</p>
+      </div>
+      <div class="review-slider">
+        <button class="slider-btn" id="prevReview">Prev</button>
+        <div class="review-viewport">
+          <div class="review-track" id="reviewTrack">
+            <article class="review-card">
+              <div class="review-header">
+                <img class="review-logo" src="https://media.discordapp.net/attachments/1443223405410390078/1468927093625716777/channels4_profile_1.jpg?ex=698b1276&is=6989c0f6&hm=a0d0d14a3c7a7b0e2a75d78f639540a9ce1ce4d9247d97f58bb93a1d7368d2e5&=&format=webp&width=200&height=200" alt="GamerOnTop logo" />
+                <div>
+                  <div class="stars">★★★★★</div>
+                  <span class="client">GamerOnTop</span>
+                </div>
+              </div>
+              <p>
+                “I’ve worked with many developers before, but none have been as talented and reliable as this Minecraft SMP
+                and Discord developer. They built a seamless survival multiplayer experience with custom plugins, optimized
+                performance, and awesome quality-of-life features that our community absolutely loves. The Discord bot they
+                developed is intuitive, fast, and perfectly integrated with our server’s systems.
+              </p>
+              <p>
+                Communication was clear and timely throughout the whole process, and they were always open to feedback and
+                improvements. The level of detail, creativity, and dedication they brought to the project went above and beyond
+                expectations. If you need someone who can elevate your Minecraft server and Discord community to the next level —
+                professional, friendly, and brilliant at problem-solving — this is the developer you want!”
+              </p>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>More testimonials coming soon. Your review can be featured here.</p>
+              <span class="client">Client Name</span>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>More testimonials coming soon. Your review can be featured here.</p>
+              <span class="client">Client Name</span>
+            </article>
+          </div>
+        </div>
+        <button class="slider-btn" id="nextReview">Next</button>
+      </div>
+      <div class="review-dots" id="reviewDots"></div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="contact" class="section contact reveal">
+      <div class="section-header">
+        <h3>Contact</h3>
+        <p>Let us build something memorable together.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Primary Contact</h4>
+          <p>Discord is the fastest way to reach me.</p>
+          <a class="btn primary" href="https://discord.com/users/980838325885747211" target="_blank" rel="noreferrer">Message on Discord</a>
+          <button class="btn ghost" id="copyDiscord">Copy Discord Link</button>
+          <div class="copy-status" id="copyStatus"></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn primary">Send Message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top">Top</button>
+
+  <footer class="footer">
+    <p>© 2026 S. Sujit Kumar. Built with Canvas, JS, and Node.</p>
+  </footer>
+
+  <script>
+    window.APP_CONFIG = {
+      apiBase: ''
+    };
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
